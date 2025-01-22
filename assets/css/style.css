@@ -34,6 +34,9 @@
   header {
     background-color: brown;
   }
+  #jumbotron_container {
+    height: 600px;
+  }
 }
 
 img {
@@ -52,6 +55,12 @@ a {
   display: flex;
 }
 
+.lcontainer {
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   width: 50%;
   max-width: 1000px;
@@ -65,7 +74,7 @@ a {
 
 .narrow_btn {
   background-color: var(--dropb-primary);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   color: var(--dropb-light);
   margin-top: -0.5rem;
 }
@@ -144,6 +153,8 @@ a {
 
 /* #endregion column utilities */
 
+/* #endregion utilities */
+
 /* #region header */
 header {
   background-color: var(--dropb-light);
@@ -155,14 +166,45 @@ header {
     justify-content: space-between;
     align-items: center;
     .nav_left {
-      gap: 1rem;
+      gap: 2rem;
       a {
         align-self: center;
       }
     }
     .nav_right {
-      gap: 1rem;
+      gap: 2rem;
     }
   }
 }
 /* #endregion header */
+
+/* #region jumbotron */
+#jumbotron_container {
+  padding-top: 12rem;
+  background-color: var(--dropb-primary-lighter);
+  h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    word-spacing: 0.5rem;
+    font-weight: 900;
+    max-width: 80%;
+    padding-bottom: 2rem;
+  }
+  .jumbo_info {
+    flex-direction: column;
+    justify-content: space-between;
+    .narrow_btn {
+      text-align: center;
+      margin: 0;
+    }
+    #d-arrow {
+      font-size: 3rem;
+      padding-top: 2.5rem;
+    }
+  }
+  .jumbo-img_container {
+    padding: 0;
+    margin-bottom: -4rem;
+  }
+}
+/* #endregion jubmotron */
