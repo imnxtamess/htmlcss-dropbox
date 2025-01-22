@@ -42,10 +42,31 @@ img {
 
 main {
   background-color: var(--dropb-light);
+  height: 100%;
+}
+
+section {
+  margin: 1rem 0rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
 }
 /* #endregion common */
 
 /* #region utilities */
+
+.gray {
+  color: gray;
+}
+
+.check {
+  color: var(--dropb-primary);
+}
 
 ul {
   list-style: none;
@@ -170,6 +191,7 @@ a {
 header {
   background-color: var(--dropb-light);
   position: fixed;
+  z-index: 100;
   width: 100%;
   box-shadow: 0 0 5px var(--dropb-borders);
   nav {
@@ -191,6 +213,7 @@ header {
 
 /* #region jumbotron */
 #jumbotron_container {
+  margin: 0;
   padding-top: 12rem;
   background-color: var(--dropb-primary-lighter);
   margin-right: 4.5px;
@@ -280,7 +303,8 @@ header {
 .enterprise_container {
   position: relative;
   border: 1px solid var(--dropb-borders);
-  margin-top: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   .enterprise_title {
     text-align: center;
     border: 1px solid var(--dropb-borders);
@@ -288,8 +312,7 @@ header {
   .enterprise {
     padding: 1rem;
     h3 {
-      font-size: 1.2rem;
-      padding: 1rem;
+      padding-left: 1rem;
     }
     h4 {
       padding: 1rem;
@@ -307,3 +330,46 @@ header {
   }
 }
 /* #endregion enterprise section */
+
+/* #region partner section */
+.partner_container {
+  padding-top: 6rem;
+}
+.col-5 {
+  line-height: 1.5rem;
+  padding-top: 5rem;
+  h3 {
+    padding: 1rem;
+  }
+  p {
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+  .white_btn {
+    border: 2px solid var(--dropb-dark);
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+}
+/* #endregion partner section */
+
+/* #region dropbox business section */
+.dbusiness {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  h2 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .row {
+    padding-bottom: 3rem;
+  }
+  p {
+    padding-top: 2rem;
+  }
+  a {
+    margin-left: 1rem;
+  }
+}
+/* #endregion dropbox business section */
