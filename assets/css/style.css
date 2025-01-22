@@ -12,6 +12,7 @@
   --dropb-primary-lighter: #b4d0e6;
   --dropb-dark: #000000;
   --dropb-light: #ffffff;
+  --dropb-borders: lightgray;
 }
 
 .debug {
@@ -22,7 +23,6 @@
     background-color: gray;
   }
   .container {
-    min-height: 200px;
     background-color: bisque;
   }
   .row {
@@ -34,13 +34,14 @@
   header {
     background-color: brown;
   }
-  #jumbotron_container {
-    height: 600px;
-  }
 }
 
 img {
   max-width: 100%;
+}
+
+main {
+  background-color: var(--dropb-light);
 }
 /* #endregion common */
 
@@ -84,6 +85,7 @@ a {
   padding: 0.5rem;
   color: var(--dropb-light);
   margin-top: -0.5rem;
+  text-align: center;
 }
 
 .bot-border:hover {
@@ -160,7 +162,7 @@ header {
   background-color: var(--dropb-light);
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px lightgray;
+  box-shadow: 0 0 5px var(--dropb-borders);
   nav {
     padding: 2rem;
     justify-content: space-between;
@@ -182,6 +184,7 @@ header {
 #jumbotron_container {
   padding-top: 12rem;
   background-color: var(--dropb-primary-lighter);
+  margin-right: 4.5px;
   h1 {
     font-size: 3.5rem;
     line-height: 5rem;
@@ -207,4 +210,41 @@ header {
     margin-bottom: -4rem;
   }
 }
+
+#jumbotron_divider {
+  padding-top: 6rem;
+}
 /* #endregion jubmotron */
+
+/* #region plans section */
+.plans_container {
+  padding-top: 2rem;
+  box-shadow: 0 0 5px var(--dropb-borders);
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .payment_select {
+    gap: 1rem;
+    padding: 3rem 0rem;
+    #checked_circle {
+      color: var(--dropb-primary);
+    }
+    #unchecked_circle {
+      color: var(--dropb-borders);
+    }
+  }
+  .plan_card {
+    flex-direction: column;
+    .card_header {
+      margin: auto;
+    }
+  }
+}
+
+.plan_info {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* #region end plans section */
