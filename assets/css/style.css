@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 :root {
@@ -60,6 +61,26 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.narrow_btn {
+  background-color: var(--dropb-primary);
+  padding: 0.5rem;
+  color: var(--dropb-light);
+  margin-top: -0.5rem;
+}
+
+.wide_btn {
+  background-color: var(--dropb-primary);
+  padding: 0.5rem;
+  color: var(--dropb-light);
+  margin-top: -0.5rem;
+}
+
+.bot-border:hover {
+  header {
+    border-bottom: 1px solid black;
+  }
 }
 
 /* #region column utilities */
@@ -126,12 +147,21 @@ a {
 /* #region header */
 header {
   background-color: var(--dropb-light);
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px lightgray;
   nav {
-    padding: 1rem;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
-    #top_logo {
-      vertical-align: bottom;
+    .nav_left {
+      gap: 1rem;
+      a {
+        align-self: center;
+      }
+    }
+    .nav_right {
+      gap: 1rem;
     }
   }
 }
