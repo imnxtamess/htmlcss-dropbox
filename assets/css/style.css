@@ -201,10 +201,10 @@ header {
       border-bottom: 1px transparent;
     }
     .nav_left {
-      gap: 2rem;
+      gap: 1rem;
     }
     .nav_right {
-      gap: 2rem;
+      gap: 1rem;
       padding-right: 1.5rem;
     }
     .nav_left a:not(:first-child):hover {
@@ -316,7 +316,7 @@ header {
   margin-bottom: 3rem;
   .enterprise_title {
     text-align: center;
-    border: 1px solid var(--dropb-borders);
+    border-bottom: 1px solid var(--dropb-borders);
   }
   .enterprise {
     padding: 1rem;
