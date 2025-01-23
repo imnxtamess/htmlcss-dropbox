@@ -252,15 +252,15 @@ header {
 }
 
 #jumbotron_divider {
-  padding-top: 6rem;
+  margin: 5rem 0;
+  border: 1px solid;
+  border-color: var(--dropb-borders);
 }
 /* #endregion jubmotron */
 
 /* #region plans section */
 
 #plans_container {
-  padding-top: 2rem;
-  box-shadow: 0 -1px 5px var(--dropb-borders);
   h2 {
     font-size: 1.7rem;
   }
@@ -384,9 +384,46 @@ header {
   a {
     margin-left: 1rem;
   }
+  #dbusiness_lower {
+    margin: 10rem 0;
+  }
 }
 /* #endregion dropbox business section */
 
 /* #region footer section */
+
+footer {
+  background-color: var(--dropb-dark);
+  margin-left: 1px;
+  color: var(--dropb-light);
+  font-weight: 200;
+  .upper_footer {
+    padding: 6rem 0;
+    justify-content: space-between;
+    .footer_headers {
+      flex-direction: column;
+      gap: 1rem;
+      h4 {
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.lower_footer {
+  padding-bottom: 2.5rem;
+  hr {
+    width: 7.5rem;
+    border-color: var(--dropb-borders);
+    margin-bottom: 2.75rem;
+  }
+  .lang_sel {
+    line-height: 1.7rem;
+    vertical-align: top;
+  }
+}
 
 /* #endregion footer section */
