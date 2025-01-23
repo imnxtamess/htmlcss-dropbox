@@ -96,6 +96,10 @@ a {
   flex-wrap: wrap;
 }
 
+[class*="btn"]:hover {
+  filter: brightness(150%);
+}
+
 .narrow_btn {
   background-color: var(--dropb-primary);
   padding: 0.5rem 1rem;
@@ -108,12 +112,6 @@ a {
   padding: 0.5rem 3rem;
   color: var(--dropb-light);
   text-align: center;
-}
-
-.bot-border:hover {
-  header {
-    border-bottom: 1px solid black;
-  }
 }
 
 .normal_link {
@@ -195,17 +193,25 @@ header {
   width: 100%;
   box-shadow: 0 0 5px var(--dropb-borders);
   nav {
-    padding: 2rem;
     justify-content: space-between;
     align-items: center;
+    a {
+      padding: 2rem;
+      align-self: center;
+      border-bottom: 1px transparent;
+    }
     .nav_left {
       gap: 2rem;
-      a {
-        align-self: center;
-      }
     }
     .nav_right {
       gap: 2rem;
+    }
+    .nav_left a:not(:first-child):hover {
+      border-bottom: 1px solid var(--dropb-dark);
+    }
+
+    .nav_right a:not(:last-child):hover {
+      border-bottom: 1px solid var(--dropb-dark);
     }
   }
 }
@@ -218,7 +224,7 @@ header {
   background-color: var(--dropb-primary-lighter);
   margin-right: 4.5px;
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height: 5rem;
     word-spacing: 0.5rem;
     font-weight: 900;
@@ -229,12 +235,14 @@ header {
     flex-direction: column;
     justify-content: space-between;
     .narrow_btn {
+      width: 60%;
       text-align: center;
       margin: 0;
+      padding: 1rem 0;
     }
     #d-arrow {
       font-size: 3rem;
-      padding-top: 2.5rem;
+      padding: 2.5rem 0rem;
     }
   }
   .jumbo-img_container {
@@ -249,12 +257,10 @@ header {
 /* #endregion jubmotron */
 
 /* #region plans section */
-.plan_card_container {
-  justify-content: space-between;
-}
-.plans_container {
+
+#plans_container {
   padding-top: 2rem;
-  box-shadow: 0 0 5px var(--dropb-borders);
+  box-shadow: 0 -1px 5px var(--dropb-borders);
   h2 {
     font-size: 1.7rem;
   }
@@ -269,12 +275,14 @@ header {
       color: var(--dropb-borders);
     }
   }
+  .plan_card_container {
+    padding-left: 0rem;
+  }
   .plan_card {
-    width: 32%;
+    padding: 1rem;
     min-height: 100%;
     border: 1px solid var(--dropb-borders);
     .card_header {
-      border-top: 1px solid var(--dropb-borders);
       border-bottom: 1px solid var(--dropb-borders);
       padding: 1rem;
       margin: -1rem -1rem;
@@ -282,7 +290,7 @@ header {
     }
   }
   .plan_info {
-    min-height: 600px;
+    min-height: 650px;
     h3 {
       font-size: 1.2rem;
       padding: 1rem 0;
@@ -350,6 +358,11 @@ header {
     padding: 1rem;
     margin-left: 1rem;
   }
+  .white_btn:hover {
+    background-color: var(--dropb-primary);
+    color: var(--dropb-light);
+    filter: brightness(150%);
+  }
 }
 /* #endregion partner section */
 
@@ -373,3 +386,7 @@ header {
   }
 }
 /* #endregion dropbox business section */
+
+/* #region footer section */
+
+/* #endregion footer section */
