@@ -205,6 +205,7 @@ header {
     }
     .nav_right {
       gap: 2rem;
+      padding-right: 1.5rem;
     }
     .nav_left a:not(:first-child):hover {
       border-bottom: 1px solid var(--dropb-dark);
